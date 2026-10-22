@@ -1,12 +1,12 @@
-import { Link, Outlet } from "react-router";
+import { Outlet } from "react-router";
+import Navbar from "../components/Navbar";
 
 export default function RootLayout() {
   return (
-    <div className="layout">
+    <div>
       <header>
-        <nav>
-          <Link to="/">Home</Link>
-        </nav>
+        <h1>ColdSense</h1>
+        <Navbar />
       </header>
 
       <main>
